@@ -1,0 +1,11 @@
+Executado em: 22/10/2026 21:47
+OK     F01 GET devolve a chave pública (para o app ativar os avisos) 
+OK     F02 Aceita chamadas do app (CORS) 
+OK     F03 Pedido inválido é recusado 
+OK     F04 Envia para o aparelho ativo e remove o vencido 
+OK     F05 O celular consegue decifrar o aviso e o texto é o do banco 
+OK     F06 Aviso assinado com a chave do hotelzinho (VAPID) e válido por 1 dia 
+OK     F07 Aparelho vencido apagado do banco 
+OK     F08 Chamar de novo não repete o aviso 
+OK     F09 Notificação inexistente não envia nada 
+9 de 9 verificações aprovadas

@@ -1,0 +1,148 @@
+Executado em: 22/10/2026 21:51
+
+== Tela Hoje ==
+OK     H01 Lista as 5 crianças ativas 
+OK     H02 Mostra alerta de alergia da Lara 
+OK     H03 Entrada registrada no banco às 09:00 
+OK     H04 Refeição gravada com aceitação TUDO, visível e autora = admin 
+OK     H05 Ocorrência avisa que a família será notificada 
+OK     H06 Banco criou aviso para os 2 responsáveis da Lara 
+OK     H07 Observação começa marcada como NÃO visível 
+OK     H08 "Outra pessoa" mostra alerta de não autorizada 
+OK     H09 Saída antes da entrada é recusada na tela 
+OK     H10 Saída gravada com quem buscou (Juliana) 
+OK     H11 Filtro Manhã mostra só Pedro e Davi 
+OK     H12 Feriado (12/10) mostra aviso e esconde os botões 
+OK     H13 Sábado mostra aviso de fim de semana 
+OK     H14 Responsável é redirecionada para a área da família 
+OK     H15 Família vê só os próprios filhos (Lara e Pedro) 
+
+15 de 15 verificações aprovadas
+
+== Cadastro de crianças e responsáveis ==
+OK     C01 Lista mostra as 5 crianças ativas 
+OK     C02 Busca por nome filtra a lista 
+OK     C03 Formulário vazio mostra os erros e não grava nada 
+OK     C04 Criança gravada com plano e alergia 
+OK     C05 Ficha avisa que falta responsável 
+OK     C06 Telefone inválido é recusado 
+OK     C07 Responsável novo gravado e vinculado como financeiro 
+OK     C08 Ficha mostra que ainda não tem acesso ao app 
+OK     C09 Depois de criar o login, a ficha mostra "Tem acesso ao app" 
+OK     C10 Responsável já cadastrado vinculado sem duplicar o cadastro 
+OK     C11 Remoção pede confirmação e apaga só o vínculo 
+OK     C12 Edição grava a nova situação 
+OK     C13 Inativa some da lista e volta com "Mostrar inativas" 
+OK     C14 Nova mãe vê só a filha dela 
+
+14 de 14 verificações aprovadas
+
+== Financeiro e pagamento por Pix ==
+OK     P01 Gera uma mensalidade por criança ativa 
+OK     P02 Resumo mostra o total previsto do mês (R$ 2.890,00) 
+OK     P03 Atrasadas mostra o Benício (setembro) 
+OK     P04 Sem chave Pix cadastrada, a família é avisada 
+OK     P05 Chave vazia é recusada 
+OK     P06 Dados do Pix salvos sem acento e em maiúsculas 
+OK     P07 Juliana vê só as mensalidades dos filhos dela (Lara e Pedro) 
+OK     P08 Código Pix tem chave, valor R$ 650,00 e CRC válido 
+OK     P09 Arquivo que não é foto/PDF é recusado 
+OK     P10 Comprovante registrado na pasta da Juliana e mensalidade EM_ANALISE 
+OK     P11 Aba "Em análise" mostra os 2 comprovantes 
+OK     P12 Confirmado: Lara PAGO com pagamento de R$ 650,00 
+OK     P13 Recusa sem motivo é bloqueada 
+OK     P14 Recusado: Pedro volta para PENDENTE 
+OK     P15 Pagamento em dinheiro quita o setembro do Benício 
+OK     P16 Juliana vê o motivo da recusa do Pedro 
+OK     P17 Patrícia vê só as mensalidades do Davi 
+
+17 de 17 verificações aprovadas
+
+== Escolha de perfil e cadastro da família ==
+OK     A01 A tela inicial pede para escolher o perfil 
+OK     A02 Administradora pela porta da família é avisada e não entra 
+OK     A03 Pela porta certa, a administradora entra 
+OK     A04 Responsável pela porta da administração é avisada e não entra 
+OK     A05 Cadastro vazio mostra os erros (inclusive os da criança) 
+OK     A06 Telefone recebe a máscara enquanto digita 
+OK     A07 DDD inexistente é recusado 
+OK     A08 Cadastro enviado vira solicitação pendente e conta inativa 
+OK     A08b Dados das duas crianças guardados no pedido, nenhuma criada ainda 
+OK     A09 Conta pendente vê "Cadastro em análise" e nenhum dado 
+OK     A10 Início avisa que há cadastro para aprovar 
+OK     A11 Davi (já matriculado) vem para vincular; Lia vem como nova, com o plano do período escolhido 
+OK     A12 Aprovado: conta ativa, vinculada ao Davi e à Lia como Tia 
+OK     A12b Lia criada com plano da tarde, em adaptação e a alergia informada 
+OK     A13 Depois de aprovada, entra e vê o Davi e a Lia, e mais ninguém 
+OK     A14b Recusado: a criança informada não é criada 
+OK     A14 Recusado vê o motivo e continua sem acesso 
+
+17 de 17 verificações aprovadas
+
+== Rotina da família, comunicados e mensagens ==
+OK     R01 Hoje sem registros mostra aviso amigável 
+OK     R02 Não deixa avançar para o futuro 
+OK     R03 Dia 02/10 mostra entrada, 4 registros visíveis e saída 
+OK     R04 Anotação interna da administração não aparece 
+OK     R05 Mostra quem buscou e como comeu 
+OK     R06 Troca de criança (irmãos) funciona 
+OK     M01 Comunicado sem título é recusado 
+OK     M02 Comunicados gravados e famílias avisadas 
+OK     M03 Juliana vê os comunicados gerais e não vê o do Davi 
+OK     M04 Mensagem da mãe gravada com o nome dela 
+OK     M05 Patrícia vê o comunicado individual do Davi 
+OK     M06 Patrícia não vê a conversa da Lara 
+OK     M07 Início avisa a mensagem nova 
+OK     M08 Lista mostra a Lara primeiro, com 1 não lida 
+OK     M09 Ao abrir, a mensagem fica marcada como lida 
+OK     M10 Juliana recebe a resposta assinada como "Hotelzinho" 
+
+16 de 16 verificações aprovadas
+
+== Avisos no celular ==
+OK     V01 Início da administração convida a ativar os avisos 
+OK     V02 Ativou: celular guardado no banco, ligado à administradora 
+OK     V03 Usa a chave pública pedida ao servidor 
+OK     V04 Em Mais aparece que os avisos estão ativos 
+OK     V05 Desativar apaga o celular do banco 
+OK     V06 "Agora não" esconde o convite (e continua escondido depois) 
+OK     V07 Mãe ativa pelo ajuste no fim do Início 
+OK     V08 Recado novo para a Lara dispara o envio para o celular da mãe 
+OK     V09 Ao sair da conta, o celular deixa de receber os avisos dela 
+OK     V10 Bloqueado: explica como liberar e não fica insistindo no Início 
+OK     V11 iPhone sem o app instalado: mostra como instalar primeiro 
+OK     V12 Conta em análise ativa os avisos para saber da aprovação 
+OK     V13 O aviso aparece no celular com título, texto, ícone e a tela certa para abrir 
+
+13 de 13 verificações aprovadas
+
+== Esqueci minha senha ==
+OK     E01 "Esqueci minha senha" abre o pedido já com o e-mail digitado 
+OK     E02 E-mail inválido é avisado 
+OK     E03 Pede o link ao Supabase com o e-mail e a volta para /nova-senha 
+OK     E04 Mensagem não revela se o e-mail tem conta 
+OK     E05 Volta para a tela de entrar 
+OK     E06 A administração também tem "Esqueci minha senha" 
+OK     E07 O link abre a tela de senha nova da conta certa 
+OK     E08 Senha fraca e senhas diferentes são avisadas 
+OK     E09 Grava a senha nova no Supabase e encerra a sessão 
+OK     E10 Depois, volta para a tela de entrar (sem entrar sozinho) 
+OK     E11 Mesmo caindo no início, pede a senha nova em vez de abrir o painel 
+OK     E12 Link vencido explica e oferece voltar 
+
+12 de 12 verificações aprovadas
+
+== App instalável no celular (PWA) ==
+OK   P01 Manifesto lido sem erros — []
+OK   P02 Service worker ativo
+OK   P03 Chrome considera o app instalável — []
+OK   P04 Cartão não aparece antes do pedido de instalação
+OK   P05 Botão "Instalar no celular" aparece no Android
+OK   P06 Toque abre a janela de instalação e o cartão some
+OK   P07 Sem internet, o app ainda abre a tela
+OK   P08 No iPhone mostra o passo a passo do Safari
+OK   P09 Dá para fechar o aviso
+OK   P10 Aberto pelo ícone (já instalado), o convite não aparece
+OK   P11 Manifesto servido com tipo correto — application/manifest+json
+
+11 de 11 aprovados

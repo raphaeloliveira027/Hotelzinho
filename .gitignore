@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-e2e
+*.log
+
+# Chaves e configurações locais (nunca enviar)
+.env
+.env.*
+!.env.example
+*.local
+.vercel
+
+# Cópia antiga do projeto que ficou dentro da pasta
+/hotelzinho/

@@ -1,0 +1,163 @@
+Executado em: 19/11/2026 21:34
+==================== RESULTADO DOS TESTES ====================
+ resultado |                                                   nome                                                    | detalhe 
+-----------+-----------------------------------------------------------------------------------------------------------+---------
+ OK        | A01 Admin vê todas as 5 crianças                                                                          | 
+ OK        | A02 Setembro do Benício aparece como ATRASADO                                                             | 
+ OK        | A03 Setembro da Lara aparece como PAGO                                                                    | 
+ OK        | A04 Gerar mensalidades de outubro cria 5                                                                  | 
+ OK        | A05 Gerar de novo não duplica                                                                             | 
+ OK        | A06 Integral copia R$ 650,00 e vence em 31/10                                                             | 
+ OK        | A07 Meio período copia R$ 470,00                                                                          | 
+ OK        | A08 Geração ficou registrada no log                                                                       | 
+ OK        | A09 Presença em sábado é bloqueada                                                                        | 
+ OK        | A10 Presença em feriado (12/10) é bloqueada                                                               | 
+ OK        | A11 Saída antes da entrada é bloqueada                                                                    | 
+ OK        | A12 Mensalidade com vencimento fora do fim do mês é bloqueada                                             | 
+ OK        | A13 Desconto maior que o valor é bloqueado                                                                | 
+ OK        | A14 Criança ativa sem plano é bloqueada                                                                   | 
+ OK        | A15 Data de nascimento no futuro é bloqueada                                                              | 
+ OK        | A16 Ocorrência gera aviso para os 2 responsáveis da Lara                                                  | 
+ OK        | A17 Alteração de alergia fica no log                                                                      | 
+ OK        | R01 Juliana vê só os 2 filhos                                                                             | 
+ OK        | R02 Juliana NÃO vê o Davi (outra família)                                                                 | 
+ OK        | R03 Juliana vê só o próprio cadastro de responsável                                                       | 
+ OK        | R04 Rotina: vê 5 registros visíveis e não vê a anotação interna                                           | 
+ OK        | R05 Mensalidades: só das próprias crianças (2 meses × 2 filhos)                                           | 
+ OK        | R06 Vê o comunicado geral                                                                                 | 
+ OK        | R07 Vê só as próprias notificações                                                                        | 
+ OK        | R08 Tentativa de alterar a alergia não muda nada                                                          | 
+ OK        | R09 Tentativa de apagar a ficha do Davi não apaga nada                                                    | 
+ OK        | R10 Comprovante para mensalidade de outra família não é gravado                                           | 
+ OK        | R10b Não envia comprovante usando o id de mensalidade do Davi (id direto)                                 | 
+ OK        | R11 Não envia comprovante já marcado como ACEITO                                                          | 
+ OK        | R12 Envia comprovante da Lara e a mensalidade vai para EM_ANALISE                                         | 
+ OK        | R13 Responsável não consegue confirmar o próprio pagamento                                                | 
+ OK        | R14 Responsável não consegue inserir pagamento direto                                                     | 
+ OK        | R15 Responsável não gera mensalidades                                                                     | 
+ OK        | R16 Responsável não lê o log de auditoria (nem tenta gravar)                                              | 
+ OK        | R17 Atualiza o próprio telefone pela função permitida                                                     | 
+ OK        | R18 Não altera o próprio cadastro direto na tabela (ex.: nome)                                            | 
+ OK        | R19 Envia mensagem sobre o próprio filho                                                                  | 
+ OK        | R20 Não envia mensagem sobre criança de outra família                                                     | 
+ OK        | R21 Aceite do termo LGPD registrado com versão                                                            | 
+ OK        | P01 Patrícia vê só o Davi                                                                                 | 
+ OK        | P02 Patrícia não vê o comprovante nem a mensagem da Juliana                                               | 
+ OK        | P03 Patrícia não vê a ocorrência da Lara nas notificações                                                 | 
+ OK        | V01 Visitante sem login não lê crianças                                                                   | 
+ OK        | V02 Visitante sem login não lê mensalidades                                                               | 
+ OK        | A18 Admin recebeu aviso de comprovante novo                                                               | 
+ OK        | A19 Recusa sem motivo é bloqueada                                                                         | 
+ OK        | A20 Após confirmar, outubro da Lara fica PAGO                                                             | 
+ OK        | A21 Pagamento criado com o valor certo (R$ 650,00)                                                        | 
+ OK        | A22 O mesmo comprovante não é confirmado duas vezes                                                       | 
+ OK        | A23 Confirmação ficou no log                                                                              | 
+ OK        | R22 Juliana recebeu o aviso de pagamento confirmado                                                       | 
+ OK        | S01 Novo usuário do Auth entra como RESPONSAVEL                                                           | 
+ OK        | S02 Usuário sem vínculo não vê nenhuma criança                                                            | 
+ OK        | S03 Usuário não consegue se promover a ADMIN                                                              | 
+ OK        | L01 Responsável sem login fica sem vínculo                                                                | 
+ OK        | L02 Login criado depois é ligado ao responsável (e-mail sem diferenciar maiúsculas)                       | 
+ OK        | L03 Login criado antes é ligado quando o responsável é cadastrado                                         | 
+ OK        | L04 Login de ADMIN nunca é ligado a um responsável                                                        | 
+ OK        | F01 Responsável envia arquivo para a própria pasta                                                        | 
+ OK        | F02 Responsável não envia arquivo para a pasta de outra família                                           | 
+ OK        | F03 Outra família não enxerga o arquivo da Juliana                                                        | 
+ OK        | F04 Administradora enxerga os comprovantes                                                                | 
+ OK        | F05 Pagamento em dinheiro quita a mensalidade atrasada                                                    | 
+ OK        | F06 Pagamento manual fica no log                                                                          | 
+ OK        | T01 Telefone: celular e fixo com DDD válido são aceitos                                                   | 
+ OK        | T02 Telefone: DDD inexistente, celular sem 9, sem máscara ou curto são recusados                          | 
+ OK        | T03 Banco recusa cadastrar responsável com telefone inválido                                              | 
+ OK        | S10 Cadastro pelo app nasce INATIVO e vira solicitação PENDENTE                                           | 
+ OK        | S11 Tentar se cadastrar como ADMIN não funciona                                                           | 
+ OK        | S12 Administradora recebe aviso de cadastro novo                                                          | 
+ OK        | S13 Conta pendente não vê nenhuma criança (mesmo já vinculada pelo e-mail)                                | 
+ OK        | S14 Conta pendente vê a própria solicitação                                                               | 
+ OK        | S15 Conta pendente não consegue se aprovar                                                                | 
+ OK        | S16 Administradora vê as 3 solicitações                                                                   | 
+ OK        | S17 Aprovar com criança exige parentesco                                                                  | 
+ OK        | S18 Recusa sem motivo é bloqueada                                                                         | 
+ OK        | S19 Aprovado: conta ativa, responsável criado com telefone e termo aceito                                 | 
+ OK        | S20 Pré-cadastrado: aprovação reaproveita o cadastro (sem duplicar)                                       | 
+ OK        | S21 Recusado continua sem acesso, com o motivo registrado                                                 | 
+ OK        | S22 Nova mãe aprovada vê só o Davi                                                                        | 
+ OK        | S23 Pai pré-cadastrado aprovado vê a Helena                                                               | 
+ OK        | M01 Mensagem da administração sai como "Hotelzinho" (nome não pode ser forjado)                           | 
+ OK        | M02 Família recebe aviso de mensagem nova                                                                 | 
+ OK        | M03 Mensagem do pai sai com o nome dele                                                                   | 
+ OK        | M04 Pai marca como lida só a mensagem do hotelzinho                                                       | 
+ OK        | M05 Pai não marca conversa de outra família                                                               | 
+ OK        | M06 Mãe vê na conversa a mensagem do pai, com o nome dele                                                 | 
+ OK        | M07 Administração recebe aviso da mensagem do pai                                                         | 
+ OK        | C01 Dados das crianças guardados na solicitação, limpos (sem campos estranhos nem itens inválidos)        | 
+ OK        | C02 Nenhuma criança é criada antes da aprovação                                                           | 
+ OK        | C03 Família não consegue aprovar a própria criança                                                        | 
+ OK        | C04 Família não cria criança direto na tabela                                                             | 
+ OK        | C05 Criança nova sem data de nascimento é recusada                                                        | 
+ OK        | C06 Criança nova sem plano é recusada                                                                     | 
+ OK        | C07 Data de nascimento no futuro é recusada                                                               | 
+ OK        | C08 Ligar a criança inexistente é recusado                                                                | 
+ OK        | C09 Tentativas com erro não deixam nada pela metade                                                       | 
+ OK        | C10 Criança aprovada é criada com os dados conferidos, plano e situação escolhidos                        | 
+ OK        | C11 Criança não aprovada não é criada                                                                     | 
+ OK        | C12 Mãe fica vinculada à criança como financeira, autorizada e emergência                                 | 
+ OK        | C13 Aviso de aprovação cita a criança e o log registra a criança criada                                   | 
+ OK        | C14 Família aprovada entra e vê só a criança aprovada                                                     | 
+ OK        | N01 Visitante sem login não registra aparelho                                                             | 
+ OK        | N02 Mãe registra o próprio celular e vê só os aparelhos dela                                              | 
+ OK        | N03 Não dá para gravar aparelho direto na tabela (só pela função)                                         | 
+ OK        | N04 Família não lê as chaves secretas do aparelho                                                         | 
+ OK        | N05 Família não consegue pedir o envio de avisos (função do servidor)                                     | 
+ OK        | N06 Endereço que não é https é recusado                                                                   | 
+ OK        | N07 Comunicado da Lara dispara 1 aviso (só a Juliana tem aparelho inscrito)                               | 
+ OK        | N08 Servidor recebe o texto vindo do banco e o aparelho de destino                                        | 
+ OK        | N09 A mesma notificação não é enviada duas vezes                                                          | 
+ OK        | N10 Notificação antiga não vira aviso (evita avisos atrasados)                                            | 
+ OK        | N11 Aparelho usado por outra pessoa passa a avisar só quem está logado                                    | 
+ OK        | N12 Ninguém desliga o aparelho de outra pessoa                                                            | 
+ OK        | N13 Ao sair ou desativar, o aparelho deixa de receber avisos                                              | 
+ OK        | N14 Sem aparelho inscrito, o banco não chama a função                                                     | 
+ OK        | K01 Família não liga a cobrança automática                                                                | 
+ OK        | K02 Desligada, a cobrança automática não gera nada                                                        | 
+ OK        | K03 Ao ligar, gera na hora as mensalidades do mês atual para as crianças ativas                           | 
+ OK        | K04 Rodar de novo no mesmo mês não duplica                                                                | 
+ OK        | K05 Geração automática fica no log                                                                        | 
+ OK        | K06 Família não altera o valor da mensalidade                                                             | 
+ OK        | K07 Alterar valor exige motivo                                                                            | 
+ OK        | K08 Valor negativo é recusado                                                                             | 
+ OK        | K09 Valor menor que o já pago é recusado                                                                  | 
+ OK        | K10 Novo valor e motivo gravados na mensalidade                                                           | 
+ OK        | K11 Alteração de valor fica no log com o valor antigo e o novo                                            | 
+ OK        | K12 A família é avisada da alteração                                                                      | 
+ OK        | K13 A família vê o novo valor e o motivo                                                                  | 
+ OK        | K14 Família não exclui cobrança                                                                           | 
+ OK        | K15 Cobrança com pagamento não pode ser excluída                                                          | 
+ OK        | K16 Excluir exige motivo                                                                                  | 
+ OK        | K17 Cobrança errada é excluída                                                                            | 
+ OK        | K18 Exclusão fica no log com o motivo                                                                     | 
+ OK        | K19 A família é avisada do cancelamento                                                                   | 
+ OK        | K20 A cobrança automática não recria a cobrança excluída no mesmo mês                                     | 
+ OK        | K21 Com comprovante em análise, o valor não muda                                                          | 
+ OK        | K22 Com comprovante em análise, a cobrança não é excluída                                                 | 
+ OK        | K23 Administração desliga a cobrança automática                                                           | 
+ OK        | I01 Família não cria cobrança                                                                             | 
+ OK        | I02 Valor diferente do plano exige motivo                                                                 | 
+ OK        | I03 Não cria duas cobranças da mesma criança no mesmo mês                                                 | 
+ OK        | I04 Cobrança individual criada só para a criança escolhida, com valor do plano e vencimento no fim do mês | 
+ OK        | I05 A família é avisada da nova cobrança                                                                  | 
+ OK        | I06 Cobrança individual fica no log                                                                       | 
+ OK        | I07 Criança inativa não recebe cobrança                                                                   | 
+ OK        | I08 Valor diferente do plano é gravado com o motivo                                                       | 
+ OK        | W01 Mensagem do hotelzinho chega com o nome da criança e o texto                                          | 
+ OK        | W02 Comunicado longo chega com título e começo do texto, cortado com reticências                          | 
+ OK        | W03 Ocorrência chega com o nome da criança e o que aconteceu                                              | 
+ OK        | W04 Registro não visível para a família não gera aviso                                                    | 
+ OK        | W05 Mensagem da família chega à administração com quem mandou, a criança e o texto                        | 
+(152 rows)
+
+ aprovados | falharam | total 
+-----------+----------+-------
+       152 |        0 |   152
+(1 row)
+

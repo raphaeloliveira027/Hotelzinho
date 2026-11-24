@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7EC4EA"/>
+      <stop offset="1" stop-color="#BFE5F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#ceu)"/><clipPath id="borda"><rect width="512" height="512" rx="112"/></clipPath><g clip-path="url(#borda)">
+  <!-- bandeirinhas -->
+  <path d="M-10 70 Q256 150 522 70" fill="none" stroke="#FFFFFF" stroke-width="4" opacity=".9"/>
+  <g stroke="#2B2A33" stroke-width="0">
+    <path d="M40 84 L82 96 L55 132 Z" fill="#FFD54A"/>
+    <path d="M110 103 L152 111 L127 149 Z" fill="#FF8A78"/>
+    <path d="M182 115 L226 119 L204 159 Z" fill="#FFFFFF"/>
+    <path d="M286 119 L330 115 L308 159 Z" fill="#B5E3C2"/>
+    
+    <path d="M430 96 L472 84 L457 132 Z" fill="#FFD54A"/>
+  </g>
+  <!-- nuvens -->
+  <path d="M66 236h70a20 20 0 0 0 0-40 26 26 0 0 0-48-7 20 20 0 0 0-22 47z" fill="#FFFFFF" opacity=".95"/>
+  <!-- sol -->
+  <g transform="translate(408 196)">
+    <g stroke="#FFD54A" stroke-width="10" stroke-linecap="round">
+      <path d="M0-48v-14M48 0h14M34-34l10-10M-34-34l-10-10M34 34l10 10M-48 0h-14"/>
+    </g>
+    <circle r="32" fill="#FFD54A"/>
+  </g>
+  <!-- grama -->
+  <ellipse cx="256" cy="560" rx="380" ry="170" fill="#9ED8AE"/>
+  <ellipse cx="256" cy="572" rx="330" ry="150" fill="#B5E3C2"/>
+  <g transform="translate(256 318) scale(1.14) translate(-256 -318)">
+  <!-- casa -->
+  <g stroke="#2B2A33" stroke-width="13" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="152" y="262" width="208" height="160" rx="18" fill="#FFFFFF"/>
+    <path d="M118 278 L256 168 L394 278" fill="#FF8A78"/>
+    <rect x="178" y="302" width="46" height="46" rx="8" fill="#A8D8F0" stroke-width="10"/>
+    <rect x="288" y="302" width="46" height="46" rx="8" fill="#A8D8F0" stroke-width="10"/>
+  </g>
+  <rect x="226" y="338" width="60" height="84" rx="10" fill="#1D6FB8"/>
+  <circle cx="273" cy="382" r="5" fill="#FFD54A"/>
+  <!-- coração no telhado -->
+  <path d="M236 222c0-12 10-19 20-9 10-10 20-3 20 9 0 15-20 26-20 26s-20-11-20-26z" fill="#FFFFFF"/>
+  </g>
+</g></svg>

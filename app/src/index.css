@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Visual "colorido e alegre": cores de giz de cera, cantos bem redondos, fontes arredondadas.
+   Todas as combinações de texto foram conferidas para contraste mínimo de 4,5:1. */
+@theme {
+  --font-sans: "Nunito", ui-rounded, system-ui, sans-serif;
+  --font-display: "Baloo 2", "Nunito", ui-rounded, system-ui, sans-serif;
+
+  --color-fundo: #FFF8EC;        /* creme */
+  --color-tinta: #2B2A33;
+  --color-suave: #6B6476;
+  --color-borda: #F0E3CC;
+
+  --color-marca: #1D6FB8;        /* azul-céu escuro: botões (texto branco 5,2:1) */
+  --color-marca-escura: #155A96;
+  --color-marca-clara: #E3F0FB;
+  --color-alerta: #C2410C;
+
+  /* Giz de cera (sempre com texto escuro por cima) */
+  --color-sol: #FFD54A;
+  --color-coral: #FFB3A7;
+  --color-ceu: #A8D8F0;
+  --color-folha: #B5E3C2;
+  --color-lilas: #D9C8F5;
+
+  /* Cantos mais redondos em todo o app */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.375rem;
+  --radius-3xl: 1.75rem;
+}
+
+body {
+  margin: 0;
+  background: var(--color-fundo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+h1 { font-weight: 800; }
